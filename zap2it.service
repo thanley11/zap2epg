@@ -1,0 +1,14 @@
+[Unit]
+Description=Downloads TV Guide data
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=tom
+Group=tv
+ExecStart=/home/tom/Scripts/zap2epg/run.sh
+
+[Install]
+WantedBy=timers.target
+

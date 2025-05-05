@@ -1,0 +1,9 @@
+[Unit]
+Description=Run script to retrieve TV Guide data daily 
+
+[Timer]
+Persistent=true     
+OnUnitActiveSec=3d
+
+[Install]
+WantedBy=timers.target
